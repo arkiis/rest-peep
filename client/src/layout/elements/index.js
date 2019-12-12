@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img from "../../assets/heart.png";
 
 export const Container = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ export const Container = styled.div`
 export const BackgroundWrapper = styled.div`
   background-color: ${props => (props.bgBlack ? "var(--color-mainDark)" : "")};
   width: 100%;
+
   height: 100vh;
   display: flex;
   align-items: center;
