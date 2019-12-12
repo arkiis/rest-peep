@@ -1,0 +1,5 @@
+export const ADD_QUOTE_START = "ADD_QUOTE_START";
+export const ADD_QUOTE_SUCCESS = "ADD_QUOTE_SUCCESS";
+export const ADD_QUOTE_FAIL = "ADD_QUOTE_FAIL";
+
+export const ADD_RANDOM_QUOTE = "ADD_RANDOM_QUOTE";
