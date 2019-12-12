@@ -14,6 +14,7 @@ router.get("/", async (req, res) => {
 
 //SUBMITS A POST
 router.post("/", async (req, res) => {
+  console.log(req);
   const post = new Post({
     quote: req.body.quote
   });
