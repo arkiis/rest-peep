@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const BackgroundWrapper = styled.div`
   background-color: ${props => (props.bgBlack ? "var(--color-mainDark)" : "")};
   width: 100%;
-
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;

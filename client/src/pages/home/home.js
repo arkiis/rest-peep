@@ -1,11 +1,12 @@
 import React from "react";
 import { BackgroundWrapper } from "../../layout/elements/index";
 import HomeContainer from "../../components/HomeContainer/HomeContainer";
+import MovingBg from "../../components/MovingBg/MovingBg";
 
 const Home = () => {
   return (
     <BackgroundWrapper bgBlack>
-      {/* place bg image divs <div /> */}
+      <MovingBg />
       <HomeContainer />
     </BackgroundWrapper>
   );
