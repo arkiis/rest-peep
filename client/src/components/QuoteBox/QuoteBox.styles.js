@@ -10,4 +10,8 @@ export const QuoteBoxContainer = styled.div`
   height: 25rem;
   width: 100%;
   border-radius: 15px;
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    height: 16rem;
+  }
 `;

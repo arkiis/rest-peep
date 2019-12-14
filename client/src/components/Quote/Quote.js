@@ -21,7 +21,8 @@ const Quote = ({ quoteData, children, fetchQuotes }) => {
   ) : (
     <div>
       <Heading size="h2" color="white">
-        🐣: <QuoteSpan>"{quoteData.randomQuote.quote}"</QuoteSpan>
+        🐣:{" "}
+        <QuoteSpan data-test="input">"{quoteData.randomQuote.quote}"</QuoteSpan>
       </Heading>
     </div>
   );

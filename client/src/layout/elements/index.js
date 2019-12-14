@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import img from "../../assets/heart.png";
 
 export const Container = styled.div`
   width: 100%;
   max-width: 884px;
   height: 716px;
-
   display: flex;
   flex-direction: column;
   align-items: center;

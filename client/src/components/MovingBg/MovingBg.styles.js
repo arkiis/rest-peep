@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import img from "../../assets/BrokenHeart-01.svg";
-import Simpsons from "../../assets/simpson-tat.png";
-import CryBaby from "../../assets/CryBaby.png";
+import Simpsons from "../../assets/simpson-tat-min.png";
+import CryBaby from "../../assets/CryBaby-min.png";
 import { animated } from "react-spring";
 
 export const BrokenHeart = styled(animated.div)`
@@ -12,6 +12,10 @@ export const BrokenHeart = styled(animated.div)`
   left: 10%;
   top: 20%;
   width: 8rem;
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: none;
+  }
 `;
 
 export const Mommmm = styled(animated.div)`
@@ -23,6 +27,10 @@ export const Mommmm = styled(animated.div)`
   left: 80%;
   top: 30%;
   width: 17rem;
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: none;
+  }
 `;
 export const Cry = styled(animated.div)`
   position: absolute;
@@ -33,6 +41,10 @@ export const Cry = styled(animated.div)`
   left: 10%;
   top: 50%;
   width: 22rem;
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: none;
+  }
 `;
 export const Star = styled.div`
   position: absolute;
