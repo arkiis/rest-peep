@@ -6,7 +6,7 @@ export const fetchQuotes = () => {
   return dispatch => {
     dispatch(fetchQuotesStart());
     axios
-      .get("http://localhost:5000/posts")
+      .get("https://rest-in-peep.herokuapp.com/posts")
       .then(response => {
         const quote = response.data;
 

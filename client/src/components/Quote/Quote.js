@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { fetchQuotes } from "../../store/actions/quoteActions";
 import { LoaderWrapper, QuoteSpan } from "./Quote.styles";
 import Loader from "../../UI/Loader/Loader";
+import { PropTypes } from "prop-types";
 
 const Quote = ({ quoteData, children, fetchQuotes }) => {
   console.log("quoteData", quoteData);
@@ -26,6 +27,13 @@ const Quote = ({ quoteData, children, fetchQuotes }) => {
       </Heading>
     </div>
   );
+};
+
+Quote.propTypes = {
+  quoteData: PropTypes.shape({
+    quote: PropTypes.array.isRequired,
+    randomQuote: PropTypes.string.isRequired
+  })
 };
 
 const mapStateToProps = state => {

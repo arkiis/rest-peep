@@ -1,9 +1,11 @@
+const http = require("http");
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 require("dotenv/config");
 const app = express();
+const server = http.createServer(app);
 
 //Middlewares
 app.use(cors());
@@ -28,4 +30,6 @@ mongoose.connect(
 );
 
 //How do we start listening to the server
-app.listen(5000);
+server.listen(process.env.PORT || 5000, () => {
+  console.log("App now running on PORT");
+});
